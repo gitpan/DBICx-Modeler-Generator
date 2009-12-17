@@ -1,0 +1,72 @@
+NAME
+----
+
+DBICx-Modeler-Generator
+
+INSTALLATION
+------------
+
+To install this distribution,
+
+first, to make Makefile, build this distribution and run tests
+by the following command:
+
+    cpan -t .
+
+next, to deploy this distribution
+by the following command:
+
+    cpan -i .
+
+DEPENDENCIES
+------------
+
+See "Makefile.PL".
+
+DESCRIPTION
+-----------
+
+This module provides dynamic definition of a DBICx::Modeler model.
+
+See further document of this distribution by the following commands:
+
+    perldoc DBICx::Modeler::Generator
+
+EXAMPLES
+--------
+
+Run the following command at root directory of this distribution:
+
+    perl -Ilib examples/src/sbin/maintain_models.pl \\
+         -a MyApp -r examples -d SQLite
+
+or
+
+    perl -Ilib examples/src/sbin/maintain_models.pl \\
+         -a MyApp -r examples -d MySQL -u username -w password \\
+         -l /Path/script_extension=_mysql.sql
+
+or
+
+    perl -Ilib examples/src/sbin/maintain_models.pl \\
+         --configfile examples/src/myapp.yml
+
+AUTHOR
+------
+
+MORIYA Masaki (a.k.a. Gardejo)
+
+    <moriya@cpan.org>, http://ttt.ermitejo.com/
+
+COPYRIGHT AND LICENSE
+---------------------
+
+Copyright (c) 2009 by MORIYA Masaki (a.k.a. Gardejo),
+L<http://ttt.ermitejo.com>.
+
+This distribution is free software;
+you can redistribute it and/or modify it under the same terms as Perl itself.
+See perlgpl and perlartistic.
+
+The full text of the license can be found in the "LICENSE" file
+included with this distribution.
