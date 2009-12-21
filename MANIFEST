@@ -2,7 +2,7 @@
 Changes
 coverage.bat
 coverage.sh
-'examples/doc/DBDERII_Including Information.png'
+examples/doc/DBDERII_Including_Information.png
 examples/doc/DBDSC_schemata.mwb
 examples/lib/MyApp.pm
 examples/src/lib/MyApp/Model/Artist/Rock.pm
