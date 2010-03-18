@@ -1,12 +1,10 @@
 ---
 abstract: 'Dynamic definition of a DBIx::Class::Schema and a DBICx::Modeler'
 author:
-  - 'MORIYA Masaki (a.k.a. Gardejo) <moriya@cpan.org>'
+  - 'MORIYA Masaki, alias Gardejo <moriya at cpan dot org>'
 build_requires:
   ExtUtils::MakeMaker: 6.42
-  Module::Install: 0.80
-  Module::Load: 0
-  Test::Class: 0
+  Test::Class: 0.34
   Test::Exception: 0.27
   Test::More: 0
   Test::Requires: 0
@@ -14,7 +12,7 @@ build_requires:
 configure_requires:
   ExtUtils::MakeMaker: 6.42
 distribution_type: module
-generated_by: 'Module::Install version 0.91'
+generated_by: 'Module::Install version 0.95'
 license: perl
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
@@ -37,7 +35,6 @@ requires:
   DBICx::Modeler: 0.005
   DBIx::Class::Schema::Loader: 0
   File::Find::Rule: 0
-  Filter::Util::Call: 0
   List::MoreUtils: 0
   Module::Load: 0
   Moose: 0.89_01
@@ -47,8 +44,7 @@ requires:
   namespace::clean: 0.08
   perl: 5.8.1
 resources:
-  bugtracker: http://rt.cpan.org/Public/Dist/Display.html?Name=DBICx-Modeler-Generator
   homepage: http://github.com/gardejo/p5-dbicx-modeler-generator
   license: http://dev.perl.org/licenses/
   repository: git://github.com/gardejo/p5-dbicx-modeler-generator.git
-version: 0.0003
+version: 0.01

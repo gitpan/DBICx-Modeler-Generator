@@ -38,7 +38,7 @@ use namespace::clean -except => [qw(meta)];
 # class constant(s)
 # ****************************************************************
 
-our $VERSION = "0.0003";
+our $VERSION = "0.01";
 
 
 # ****************************************************************
@@ -173,6 +173,12 @@ __END__
 
 DBICx::Modeler::Generator - Dynamic definition of a DBIx::Class::Schema and a DBICx::Modeler
 
+=head1 VERSION
+
+This document describes
+L<DBICx::Modeler::Generator|DBICx::Modeler::Generator>
+version C<0.01>.
+
 =head1 SYNOPSIS
 
     use Orochi;
@@ -268,7 +274,13 @@ C<< [File] - [Export] - [Forward Engineer SQL CREATE Script...] >> function
 of I<MySQL Workbench>.
 
 The sample of an exported creation script file available for
-F<examples/src/myapp_mysql.sql> in this distribution.
+F<examples/src/myapp_mysql.sql> (for MySQL) and
+F<examples/src/myappl.sql> (for SQLite)
+in this distribution.
+
+Note: I<MySQL Workbench> can export DDL script for SQLite
+with I<SQLite export plugin for MySQL Workbench> plugin
+(L<http://www.henlich.de/software/sqlite-export-plugin-for-mysql-workbench/>).
 
 =item 4.
 
@@ -860,18 +872,18 @@ L<workflow|/How to model in your application - typical workflow> above.
 
 Run the following command at root directory of this distribution:
 
-    perl -Ilib examples/src/sbin/maintain_models.pl \\
+    perl -Ilib examples/src/sbin/maintain_models.pl \
          -a MyApp -r examples -d SQLite
 
 or
 
-    perl -Ilib examples/src/sbin/maintain_models.pl \\
-         -a MyApp -r examples -d MySQL -u username -w password \\
+    perl -Ilib examples/src/sbin/maintain_models.pl            \
+         -a MyApp -r examples -d MySQL -u username -w password \
          -l /Path/script_extension=_mysql.sql
 
 or
 
-    perl -Ilib examples/src/sbin/maintain_models.pl \\
+    perl -Ilib examples/src/sbin/maintain_models.pl \
          --configfile examples/src/myapp.yml
 
 =head1 SEE ALSO
@@ -931,7 +943,7 @@ More tests
 
 Using L<Test::mysqld|Test::mysqld> for tests
 (cf. L<http://mt.endeworks.jp/d-6/2009/10/things-ive-done-while-using-test-mysqld.html>
-by Daisuke Maki, a.k.a. lestrrat)
+by Daisuke Maki, alias lestrrat
 
 =back
 
@@ -1027,17 +1039,16 @@ below is the C<Devel::Cover> summary report on this distribution's test suite.
 
 =over 4
 
-=item MORIYA Masaki (a.k.a. Gardejo)
+=item MORIYA Masaki, alias Gardejo
 
-C<< <moriya at ermitejo dot com> >>,
-L<http://ttt.ermitejo.com/>
+C<< <moriya at cpan dot org> >>,
+L<http://gardejo.org/>
 
 =back
 
 =head1 COPYRIGHT AND LICENSE
 
-Copyright (c) 2009 by MORIYA Masaki (a.k.a. Gardejo),
-L<http://ttt.ermitejo.com>.
+Copyright (c) 2009-2010 MORIYA Masaki, alias Gardejo
 
 This module is free software;
 you can redistribute it and/or modify it under the same terms as Perl itself.

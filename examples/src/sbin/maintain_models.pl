@@ -46,43 +46,43 @@ maintain_models - Maintainer of schema and model modules
 
 =head1 SYNOPSIS
 
-    $ perl -Ilib examples/src/sbin/maintain_models.pl   \\
-           -a MyApp                                     \\
-           -r examples                                  \\
+    $ perl -Ilib examples/src/sbin/maintain_models.pl   \
+           -a MyApp                                     \
+           -r examples                                  \
            -d SQLite
 
     # or
 
-    $ perl -Ilib examples/src/sbin/maintain_models.pl   \\
-           --application=MyApp                          \\
-           --root=examples                              \\
+    $ perl -Ilib examples/src/sbin/maintain_models.pl   \
+           --application=MyApp                          \
+           --root=examples                              \
            --driver=SQLite
 
     # or
 
-    $ perl -Ilib examples/src/sbin/maintain_models.pl   \\
-           -a MyApp                                     \\
-           -r examples                                  \\
-           -d MySQL                                     \\
-           -u mysql_user                                \\
-           -w foobar                                    \\
+    $ perl -Ilib examples/src/sbin/maintain_models.pl   \
+           -a MyApp                                     \
+           -r examples                                  \
+           -d MySQL                                     \
+           -u mysql_user                                \
+           -w foobar                                    \
            -l /Path/script_extension=_mysql.sql
 
     # or
 
-    $ perl -Ilib examples/src/sbin/maintain_models.pl   \\
-           --application=MyApp                          \\
-           --root=examples                              \\
-           --driver=MySQL                               \\
-           --username=mysql_user                        \\
-           --password=foobar                            \\
-           --host=hostname                              \\
-           --port=3306                                  \\
+    $ perl -Ilib examples/src/sbin/maintain_models.pl   \
+           --application=MyApp                          \
+           --root=examples                              \
+           --driver=MySQL                               \
+           --username=mysql_user                        \
+           --password=foobar                            \
+           --host=hostname                              \
+           --port=3306                                  \
            --literal /Path/script_extension=_mysql.sql
 
     # or
 
-    $ perl -Ilib examples/src/sbin/maintain_models.pl   \\
+    $ perl -Ilib examples/src/sbin/maintain_models.pl   \
            --configfile=examples/src/myapp.yml
 
 =head1 DESCRIPTION
@@ -151,19 +151,18 @@ L<DBICx::Modeler::Generator::CLI>
 
 =over 4
 
-=item MORIYA Masaki (a.k.a. Gardejo)
+=item MORIYA Masaki, alias Gardejo
 
-C<< <moriya at ermitejo dot com> >>,
-L<http://ttt.ermitejo.com/>
+C<< <moriya at cpan dot org> >>,
+L<http://gardejo.org/>
 
 =back
 
 =head1 COPYRIGHT AND LICENSE
 
-Copyright (c) 2009 by MORIYA Masaki (a.k.a. Gardejo),
-L<http://ttt.ermitejo.com>.
+Copyright (c) 2009-2010 MORIYA Masaki, alias Gardejo
 
-This module is free software;
+This script is free software;
 you can redistribute it and/or modify it under the same terms as Perl itself.
 See L<perlgpl|perlgpl> and L<perlartistic|perlartistic>.
 
