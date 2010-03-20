@@ -1,7 +1,5 @@
 .gitignore
 Changes
-coverage.bat
-coverage.sh
 examples/doc/DBDERII_Including_Information.png
 examples/doc/DBDSC_schemata.mwb
 examples/lib/MyApp.pm
@@ -17,6 +15,7 @@ examples/src/myapp_mysql.sql
 examples/src/myapp_sqlite_with_fk.sql
 examples/src/sbin/confirm_image_size.pl
 examples/src/sbin/maintain_models.pl
+inc/Algorithm/C3.pm
 inc/Class/C3.pm
 inc/Class/C3/next.pm
 inc/Module/Install.pm
@@ -30,7 +29,6 @@ inc/Module/Install/Makefile.pm
 inc/Module/Install/Metadata.pm
 inc/Module/Install/Win32.pm
 inc/Module/Install/WriteAll.pm
-inc/mro.pm
 inc/MRO/Compat.pm
 inc/Sub/Uplevel.pm
 inc/Test/Builder/Module.pm
